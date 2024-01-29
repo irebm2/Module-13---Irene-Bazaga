@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 const Header = () => {
   return (
     <header>
+      <p>Holi</p>
+      
       <Navbar />
     </header>
   );
