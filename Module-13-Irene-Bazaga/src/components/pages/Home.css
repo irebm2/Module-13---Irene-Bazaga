@@ -1,0 +1,77 @@
+/* Home.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d8aef4; /* Pale lavender background */
+  }
+  
+  .home-content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .intro-heading {
+    font-size: 48px;
+    color: #6ec1ee; /* Soft blue heading */
+    margin-bottom: 20px;
+  }
+  
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #37474f; /* Darker grey text */
+    margin-bottom: 40px;
+  }
+  
+  .skills-highlight {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Wrap list items on smaller screens */
+    justify-content: center; /* Center the list items horizontally */
+  }
+  
+  .skills-highlight li {
+    display: inline-block;
+    margin-right: 20px; /* Reduced spacing between list items */
+    margin-bottom: 20px; /* Added bottom margin for spacing */
+    padding: 10px 20px;
+    background-color: #edf6fe; /* White card */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out; /* Add transition for hover zoom */
+  }
+  
+  .skills-highlight li:hover {
+    transform: scale(1.1); /* Zoom on hover */
+  }
+  
+  .cta-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .btn-primary,
+  .btn-outline-primary {
+    background-color: #9be5e1; /* Pale blue background */
+    color: #37474f; /* Darker grey text for better contrast */
+    border: none;
+    padding: 15px 30px; /* Increased padding for better readability */
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    margin-right: 20px; /* Separate buttons with 20px spacing */
+  }
+  
+  .btn-primary:hover,
+  .btn-outline-primary:hover {
+    background-color: #18948d; /* Darker blue on hover */
+    color: rgb(233, 168, 233)
+  }
+  

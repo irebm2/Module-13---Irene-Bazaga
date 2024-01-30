@@ -1,0 +1,162 @@
+/* Contact.css */
+.contact-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-title {
+  font-size: 48px;
+  color: #6ec1ee; /* Soft blue heading */
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #37474f; /* Darker grey text */
+  margin-bottom: 40px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.contact-list li {
+  margin-bottom: 20px;
+}
+
+.contact-list a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #edf6fe; /* White card */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-decoration: none;
+  color: #37474f; /* Darker grey text */
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-list a:hover {
+  transform: scale(1.1);
+  color: rgb(233, 168, 233);
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjusted for better contrast */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0; /* Initially hidden for animation */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+  opacity: 1; /* Show with fade-in animation */
+}
+
+.modal:focus {
+  /* Add outline for accessibility */
+  outline: 2px solid #6ec1ee; /* Use a soft blue outline */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-form-title {
+  font-size: 24px;
+  color: #6ec1ee;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #37474f; /* Darker grey text */
+}
+
+input,
+textarea {
+  width: 90%; /* Updated to occupy 90% of the form width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Style the "Send Message" button */
+.submit-button {
+  background-color: #9be5e1;
+  color: #37474f;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px; /* Adjust spacing from the form */
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #18948d;
+  color: rgb(233, 168, 233);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .contact-container {
+    padding: 30px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .contact-list a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .contact-form-title {
+    font-size: 20px;
+  }
+
+  .submit-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}

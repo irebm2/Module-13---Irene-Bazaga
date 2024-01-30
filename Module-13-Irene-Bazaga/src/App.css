@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .header-sub-title {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation Styles */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; /* Remove list style dots */
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    background-color: #eee;
+  }
+  
+  .nav-link.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Hamburger Menu Styles */
+  .nav-toggle {
+    display: none; /* Hide on desktop initially */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-toggle--open {
+    display: block;
+  }
+  
+  /* Open Menu State Styles */
+  .nav-links--open {
+    display: block;
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links--open li {
+    margin-bottom: 10px;
+  }
+
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .contact-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav {
+      flex-direction: column;
+      align-items: flex-start; /* Left-align menu items on smaller screens */
+    }
+  
+    .nav-toggle {
+      top: 10px;
+      right: unset; /* Remove right positioning on smaller screens */
+    }
+  
+    .nav-link {
+      font-size: 14px; /* Optional font size adjustment for smaller screens */
+    }
+  }
+  
+  
+  

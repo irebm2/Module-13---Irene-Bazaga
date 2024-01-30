@@ -1,35 +1,71 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import Learn from './Learn';
+import './Contact.css';
 
-function Contact(props) {
+const Contact = ({ showForm, setShowForm }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your form submission logic here (e.g., send email)
+    console.log('Form submitted:', e.target.elements);
+    setShowForm(false); // Close the form after submission
+    // Reset form fields (optional for better user experience)
+    e.target.reset();
+  };
+
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-      <Link to="learn" role="button" className="btn btn-link">
-        Learn More
-      </Link>
-      <Link to="contact" role="button" className="btn btn-link">
-        Learn Less
-      </Link>
-      <Routes>
-        <Route path="learn" element={<Learn />} />
-      </Routes>
+    <div className="contact-container">
+      <div className="contact-info">
+        <h1 className="contact-title">Get in Touch</h1>
+        <p>Feel free to reach out with any inquiries or feedback:</p>
+        <ul className="contact-list">
+          <li>
+            <a href="https://github.com/irebm2" target="_blank" rel="noopener noreferrer">
+              View my GitHub Profile
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/irene-bazaga/?locale=en_US" target="_blank" rel="noopener noreferrer">
+              Connect on LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:irebazaga@gmail.com">
+              Send an Email
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="contact-form">
+        <button className="submit-button" onClick={() => setShowForm(true)}>
+          Send a Message
+        </button>
+        {showForm && (
+          <div className={`modal ${showForm && 'show'}`}> {/* Add 'show' class dynamically */}
+            <div className="modal-content">
+              <button className="close" onClick={() => setShowForm(false)}>
+                &times;
+              </button>
+              <form onSubmit={handleSubmit}>
+                {/* Add your form fields here */}
+                <div className="form-group">
+                  <label htmlFor="name">Name:</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email:</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" />
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default Contact;
