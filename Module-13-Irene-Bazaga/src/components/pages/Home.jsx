@@ -20,7 +20,7 @@ function Home() {
         <li>Project planning & workflows 📋</li>
       </ul>
       <div className="cta-container">
-        <a href="/cv.pdf" target="_blank" className="btn btn-primary">
+        <a href="./CV/CV Junior Dev.pdf" target="_blank" className="btn btn-primary">
           Download my CV ⬇️
         </a>
         <a href="/portfolio" className="btn btn-primary">
