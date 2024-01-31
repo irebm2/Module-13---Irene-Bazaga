@@ -5,5 +5,40 @@
     "deployedLink": "https://irebm2.github.io/Module-8----Irene-Bazaga/",
     "githubLink": "https://github.com/irebm2/Module-8----Irene-Bazaga",
     "image": "./images/project1img.png"
+  },
+  {
+    "id": 2,
+    "title": "Weather Dashboard",
+    "deployedLink": "https://irebm2.github.io/Module-7---Irene-Bazaga/",
+    "githubLink": "https://github.com/irebm2/Module-7---Irene-Bazaga",
+    "image": "./images/project2img.png"
+  },
+  {
+    "id": 3,
+    "title": "Coding Quiz Challenge",
+    "deployedLink": "https://irebm2.github.io/Module-6-Irene-Bazaga/",
+    "githubLink": "https://github.com/irebm2/Module-6-Irene-Bazaga",
+    "image": "./images/project3img.png"
+  },
+  {
+    "id": 4,
+    "title": "Password Generator",
+    "deployedLink": "https://irebm2.github.io/Module-5-Irene-Bazaga/",
+    "githubLink": "https://github.com/irebm2/Module-5-Irene-Bazaga",
+    "image": "./images/project4img.png"
+  },
+  {
+    "id": 1,
+    "title": "Console-Finances Repository",
+    "deployedLink": "https://irebm2.github.io/Module-4---Irene-Bazaga/",
+    "githubLink": "https://github.com/irebm2/Module-4---Irene-Bazaga",
+    "image": "./images/project5img.png"
+  },
+  {
+    "id": 1,
+    "title": "Irene's Web Dev Portfolio",
+    "deployedLink": "https://irebm2.github.io/03-Module-project/",
+    "githubLink": "https://github.com/irebm2/03-Module-project",
+    "image": "./images/project6img.png"
   }
 ]

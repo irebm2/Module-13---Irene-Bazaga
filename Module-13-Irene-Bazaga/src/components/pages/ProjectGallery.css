@@ -1,37 +1,52 @@
 .container {
-    font-family: sans-serif; /* Clean and modern font */
-    background-color: #f5f6f9; /* Light and airy background */
-    text-align: center; /* Centered content for visual balance */
+    font-family: sans-serif;
+    background-color: #f5f6f9;
+    text-align: center;
     padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   
-  /* Headings */
   .title {
     font-size: 48px;
-    color: #6ec1ee; /* Soft blue for a calm and inviting tone */
+    color: #6ec1ee;
     margin-bottom: 20px;
   }
   
   .subtitle {
     font-size: 24px;
-    color: #37474f; /* Darker grey for contrast */
+    color: #37474f;
     margin-bottom: 30px;
   }
   
-  /* Cards */
   .card {
-    background-color: #ffffff; /* Clean white base */
-    border-radius: 10px; /* Soft rounded corners for a modern touch */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
-    text-align: left; /* Left-aligned text for readability */
+    min-height: 200px;
+    text-align: left;
     transition: transform 0.2s ease-in-out;
+    width: calc(33.33% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 95%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
   }
   
   .card:hover {
-    transform: scale(1.05); /* Subtle hover effect for engagement */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .card-title {
@@ -46,9 +61,8 @@
     color: #37474f;
   }
   
-  /* Buttons */
   .button {
-    background-color: #6ec1ee; /* Soft blue for a cohesive look */
+    background-color: #6ec1ee;
     color: #ffffff;
     border: none;
     padding: 12px 20px;
@@ -59,24 +73,24 @@
   }
   
   .button:hover {
-    background-color: #18948d; /* Darker blue on hover for emphasis */
+    background-color: #18948d;
   }
   
-  /* Responsiveness */
   @media screen and (max-width: 768px) {
     .container {
       padding: 30px;
     }
-  
+    
     .title {
       font-size: 36px;
     }
-  
+    
     .card {
       margin: 10px;
       padding: 15px;
+      width: calc(50% - 20px);
     }
-  
+    
     .button {
       padding: 10px 15px;
       font-size: 14px;

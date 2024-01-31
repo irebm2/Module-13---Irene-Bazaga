@@ -11,8 +11,8 @@ body {
     justify-content: space-between;
     align-items: center;
     list-style: none; /* Remove list style dots */
-    padding: 0;
-    margin-top: 20px;
+    padding: 20;
+    margin: 30px;
   }
   
   .nav-links {
