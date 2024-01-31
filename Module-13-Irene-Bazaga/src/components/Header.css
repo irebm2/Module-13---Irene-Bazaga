@@ -1,10 +1,9 @@
 /* Header.css */
 
 .header {
-    background-color: #de9ce9; /* Match body background */
+    background-color: #dfdaf6; /* Match body background */
     padding: 20px 0;
     text-align: center;
-    position: fixed; /* Fixed for consistent visibility */
     top: 0;
     left: 0;
     width: 100%;
@@ -13,7 +12,7 @@
   }
   
   .header-title {
-    font-size: 24px;
+    font-size: 44px;
     color: #6ec1ee; /* Soft blue for branding */
     font-weight: bold;
     margin-bottom: 10px;
@@ -22,7 +21,7 @@
   .header-nav {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px;
   }
   
   .header-nav a {
@@ -32,7 +31,7 @@
     border: 1px solid #edf6fe; /* Soft blue border */
     border-radius: 5px;
     text-decoration: none;
-    color: #37474f; /* Darker gray text */
+    color: #1d84b7; /* Darker blue text */
     transition: background-color 0.2s ease-in-out;
   }
   
@@ -40,7 +39,7 @@
     background-color: #edf6fe; /* Soft blue hover effect */
     color: #6ec1ee;
   }
-  
+ 
   /* Responsive adjustments for smaller screens */
   @media screen and (max-width: 600px) {
     .header-title {

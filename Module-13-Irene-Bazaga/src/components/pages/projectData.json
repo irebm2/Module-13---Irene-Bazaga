@@ -1,16 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Project 1",
-    "deployedLink": "https://project1.com",
-    "githubLink": "https://github.com/project1",
-    "image": "project1.gif"
-  },
-  {
-    "id": 2,
-    "title": "Project 2",
-    "deployedLink": "https://project2.com",
-    "githubLink": "https://github.com/project2",
-    "image": "project2.gif"
+    "title": "Weather Dashboard",
+    "deployedLink": "https://irebm2.github.io/Module-8----Irene-Bazaga/",
+    "githubLink": "https://github.com/irebm2/Module-8----Irene-Bazaga",
+    "image": "./images/project1img.png"
   }
 ]

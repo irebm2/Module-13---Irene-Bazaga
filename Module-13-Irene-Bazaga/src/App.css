@@ -4,23 +4,6 @@ body {
     padding: 0;
   }
   
-  .header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header-title {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .header-sub-title {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
   
   /* Navigation Styles */
   .nav {
@@ -42,7 +25,7 @@ body {
   }
   
   .nav-link {
-    color: #333;
+    color: #2c59f0;
     text-decoration: none;
     padding: 5px 10px;
     border: 1px solid transparent;
@@ -52,12 +35,12 @@ body {
   }
   
   .nav-link:hover {
-    background-color: #eee;
+    background-color: #f2ddb4;
   }
   
   .nav-link.active {
-    background-color: #333;
-    color: #fff;
+    background-color: #373189;
+    color:#f2ddb4;
   }
   
   /* Hamburger Menu Styles */
